@@ -1,14 +1,19 @@
 import React from "react";
 import Header from "./UI/Header/Header.js";
 import Explore from "./components/Explore/Explore.js";
-
-import { Route } from "react-router-dom";
+import NFTDetail from "./components/NFTDetail/NFTDetail.js";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Header />
-      <Explore />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route exact path="/:id" element={<NFTDetail />} />
+          <Route exact path="/" element={<Explore />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

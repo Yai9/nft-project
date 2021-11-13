@@ -1,0 +1,104 @@
+.nft-card {
+  min-height: 500px;
+  margin-top: 0;
+}
+
+.nft-wrapper {
+  padding: 10px;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.nft-item {
+  position: relative;
+  padding: 18px 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 300px;
+  height: 450px;
+  background-color: #fff;
+  -webkit-box-shadow: 3px 5px 15px #04d3;
+  box-shadow: 3px 5px 15px #04d3;
+}
+
+.nft-title {
+  width: 100%;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #dde;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.nft-image-container {
+  width: 100%;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  justify-content: center;
+  & img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: all 0.7s;
+  }
+}
+
+.nft-image-wrapper {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nft-price {
+  font-size: 24px;
+  color: #18b3cc;
+  font-weight: 700;
+  margin-bottom: 10px;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 2px solid #dde;
+  border-bottom: 2px solid #dde;
+  padding: 8px 0;
+  width: 100%;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.nft-license-views-container {
+  display: flex;
+  font-size: 14px;
+  color: #251552;
+  font-weight: 600;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.nft-minted-likes-container {
+  display: flex;
+  font-size: 14px;
+  color: #251552;
+  font-weight: 600;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
