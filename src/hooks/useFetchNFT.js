@@ -24,7 +24,7 @@ export const useFetchNFT = (query, pageNum) => {
           if (axios.isCancel(err)) {
             return;
           }
-		throw new Error(err.message)
+          throw new Error(err.message);
         });
     } else {
       setLoading(true);
@@ -41,7 +41,7 @@ export const useFetchNFT = (query, pageNum) => {
           if (axios.isCancel(err)) {
             return;
           }
-		throw new Error(err.message)
+          throw new Error(err.message);
         });
     }
   };
@@ -51,6 +51,6 @@ export const useFetchNFT = (query, pageNum) => {
 
   return {
     data,
-    loading
+    loading,
   };
 };

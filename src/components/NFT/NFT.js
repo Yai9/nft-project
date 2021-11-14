@@ -28,7 +28,7 @@ const NFT = (props) => {
           likes: nftData[key].liked,
           license: nftData[key].LicenseTitle,
           isNFTPRO: nftData[key].isNFTPR,
-          tags: nftData[key].tags
+          tags: nftData[key].tags,
         });
       }
     }

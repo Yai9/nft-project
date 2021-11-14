@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Loader from "../../UI/Loader/Loader.js";
-import Button from '../../UI/Button/Button.js';
+import Button from "../../UI/Button/Button.js";
 import { useParams } from "react-router-dom";
 
 import "./NFTDetail.scss";
@@ -29,8 +29,6 @@ const NFTDetail = () => {
       <Loader />
     </div>
   );
-
-
 
   if (data.length !== 0) {
     displayData = (
@@ -88,7 +86,9 @@ const NFTDetail = () => {
                           </div>
                         </div>
                       ) : (
-                        <p><strong>Not Part of a Collection</strong></p>
+                        <p>
+                          <strong>Not Part of a Collection</strong>
+                        </p>
                       )}
                     </div>
                   </div>
@@ -116,23 +116,24 @@ const NFTDetail = () => {
                     <span>{data.price}</span> SOL
                   </p>
                 </div>
-	    <div className="connect-wallet-container">
-	    <Button className="connect-wallet">Connect Your Wallet</Button>
-	    </div>
+                <div className="connect-wallet-container">
+                  <Button className="connect-wallet">
+                    Connect Your Wallet
+                  </Button>
+                </div>
               </div>
               <div className="info-container">
-	    <div className="history-container">
-	    <h3>History</h3>
-	    <p>No history of sales on SolSea!</p>
-	    </div>
-	    </div>
+                <div className="history-container">
+                  <h3>History</h3>
+                  <p>No history of sales on SolSea!</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
     );
   }
-
 
   return <>{displayData}</>;
 };

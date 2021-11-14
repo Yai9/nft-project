@@ -52,13 +52,12 @@ header {
   justify-content: center;
 }
 
-@media(max-width:925px){
-	.nav-items{
-		display:flex;
-		flex-direction:column;
-		width:40%
-		& a{
-	}
-	
+@media (max-width: 925px) {
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    width: 40% & a {
 
-}}
+    }
+  }
+}

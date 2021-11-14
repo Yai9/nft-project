@@ -177,7 +177,6 @@
   font-size: 14px;
 }
 
-
 .listed-by {
   text-align: left;
   border-bottom: 2px solid #ddd;
@@ -207,22 +206,21 @@
   }
 }
 
-
-.connect-wallet-container{
-	width:100%;
-	margin-top:20px;
+.connect-wallet-container {
+  width: 100%;
+  margin-top: 20px;
 }
 
-.connect-wallet{
-	width:100%
+.connect-wallet {
+  width: 100%;
 }
-.history-container{
-	display:flex;
-	flex-direction:column;
+.history-container {
+  display: flex;
+  flex-direction: column;
 }
 
-@media (max-width:925px){
-	.nft-detail{
-		padding-top:150px;
-	}
+@media (max-width: 925px) {
+  .nft-detail {
+    padding-top: 150px;
+  }
 }
