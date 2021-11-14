@@ -8,7 +8,10 @@ const Header = () => {
   return (
     <header>
       <div className="header-items">
-        <img src="SolSea.svg" />
+        <Link to="/">
+          {" "}
+          <img src="SolSea.svg" />
+        </Link>
         <div className="nav-items">
           <Link to="/explore">Explore</Link>
           <Link to="">Create</Link>

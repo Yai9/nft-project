@@ -8,8 +8,6 @@ const NFTItem = (props) => {
 
   const nftData = ctx.nftData;
 
-  console.log(nftData);
-
   const showNFTDetailHandler = (mint) => {
     const nftItem = nftData.find((nft) => nft.mint === mint);
     window.location.pathname = `/${nftItem.mint}`;

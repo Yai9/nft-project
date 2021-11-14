@@ -16,7 +16,7 @@
 
 .nft-detail-row-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding-top: 0;
   padding-bottom: 120px;
 }
@@ -24,6 +24,13 @@
 .first-container {
   box-sizing: border-box;
   width: 50%;
+  padding: 20px;
+}
+
+.second-container {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 20px;
 }
 
 .image-container {
@@ -47,6 +54,48 @@
   box-shadow: 0 5px 8px #0092;
   background-color: #fefeff;
   box-sizing: border-box;
+}
+
+.info-items {
+  & h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    display: flex;
+    justify-content: flex-start;
+  }
+  & .license-items {
+    & img {
+      width: 20px;
+    }
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+  }
+  & .collection-items {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+
+    .collection-data {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      .collection-desc {
+        display: flex;
+        flex-direction: column;
+        max-width: 70%;
+        margin: 10px;
+      }
+      & img {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+      }
+    }
+  }
 }
 
 .traits-container {
@@ -85,4 +134,33 @@
   font-weight: 800;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
+}
+
+.statistics-container {
+  justify-content: right;
+  display: flex;
+  flex-flow: row;
+}
+
+.statistics-item {
+  margin-left: 15px;
+  font-weight: 600;
+  padding: 5px 10px;
+  font-size: 16px;
+  text-align: center;
+  min-width: 80px;
+  border-radius: 50px;
+  background-color: #f4f7fc;
+  color: #727272;
+}
+
+.not-verified-nft {
+  text-align: center;
+  background: #fce100;
+  color: #000;
+  padding: 5px 20px;
+  border-radius: 20px;
+  margin: 0 auto 20px auto;
+  letter-spacing: 1px;
+  font-size: 14px;
 }
