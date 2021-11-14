@@ -32,11 +32,15 @@ const NFTItem = (props) => {
             <div className="nft-price">{props.price.toFixed(2)} SOL</div>
             <div className="nft-license-views-container">
               <span>{props.license}</span>
-              <span>{props.views}</span>
+              <span>
+                {props.views} <i className="fa fa-eye me-1"></i>
+              </span>
             </div>
             <div className="nft-minted-likes-container">
-              <span></span>
-              <span>{props.likes}</span>
+	  <span>{props.mint ? "Minted on SolSea" : ""}</span>
+              <span>
+                {props.likes} <i className="fa me-1 fa-heart"></i>
+              </span>
             </div>
           </div>
         </div>

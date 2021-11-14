@@ -92,6 +92,9 @@
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  & i{
+	  color:grey;
+  }
 }
 .nft-minted-likes-container {
   display: flex;
@@ -101,4 +104,8 @@
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  & i{
+  color:#f54272;
+  
+  }
 }
