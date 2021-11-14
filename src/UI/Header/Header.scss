@@ -3,6 +3,7 @@ $linkColor: black;
 
 header {
   background-color: $primColor;
+  backdrop-filter: blur(10px);
   top: 0;
   left: 0;
   position: fixed;
@@ -48,6 +49,16 @@ header {
 
 .filter-container {
   width: 100%;
-  -ms-flex-pack: center;
   justify-content: center;
 }
+
+@media(max-width:925px){
+	.nav-items{
+		display:flex;
+		flex-direction:column;
+		width:40%
+		& a{
+	}
+	
+
+}}

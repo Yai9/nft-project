@@ -12,7 +12,7 @@ const NFT = (props) => {
   const fetchNFTData = async () => {
     if (props.data && props.data.length !== 0) {
       const nftData = props.data;
-      console.log(props.data, "props.data");
+      console.log(nftData.data, "props.data");
       for (let key in nftData) {
         nftArray.push({
           id: nftData[key]._id,
@@ -28,17 +28,25 @@ const NFT = (props) => {
           likes: nftData[key].liked,
           license: nftData[key].LicenseTitle,
           isNFTPRO: nftData[key].isNFTPR,
-          tags: nftData[key].tags,
+          tags: nftData[key].tags
         });
       }
     }
-    setData(nftArray);
-    console.log(nftArray, "data");
+
+    let displayedData = [];
+    if (props.searchValue) {
+      displayedData = nftArray.filter((item) =>
+        item.title.toLowerCase().includes(props.searchValue)
+      );
+    } else {
+      displayedData = nftArray;
+    }
+    setData(displayedData);
   };
 
   useEffect(() => {
     fetchNFTData();
-  }, [props.data]);
+  }, [props.data, props.searchValue]);
 
   return (
     <>

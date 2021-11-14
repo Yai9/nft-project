@@ -13,12 +13,12 @@ const Header = () => {
           <img src="SolSea.svg" />
         </Link>
         <div className="nav-items">
-          <Link to="/explore">Explore</Link>
-          <Link to="">Create</Link>
-          <Link to="">Calendar</Link>
-          <Link to="">FAQ</Link>
+          <Link to="/">Explore</Link>
+          <Link to="/">Create</Link>
+          <Link to="/">Calendar</Link>
+          <Link to="/">FAQ</Link>
           <Button>
-            <Link to="/wallet">Connect wallet</Link>
+            <Link to="/">Connect wallet</Link>
           </Button>
         </div>
       </div>

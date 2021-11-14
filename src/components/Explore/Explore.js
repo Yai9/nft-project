@@ -9,15 +9,14 @@ const Explore = () => {
   const [pageNumber, setPageNumber] = useState(0);
 
   const { data, loading } = useFetchNFT(searchValue, pageNumber);
-
   const observer = useRef();
+
   const lastNFTItem = useCallback(
     (node) => {
       if (observer.current) observer.current.disconnect();
       observer.current = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
           setPageNumber(1);
-          console.log("Visible");
         }
       });
       if (node && observer) observer.current.observe(node);
@@ -27,10 +26,8 @@ const Explore = () => {
 
   const searchValueHandler = (event) => {
     setSearchValue(event.target.value);
-    setPageNumber((prevState) => prevState + 1);
   };
 
-  console.log(data, "dataaa");
   return (
     <>
       <div>
@@ -50,7 +47,6 @@ const Explore = () => {
                     <i className="fa fa-search"></i>
                   </div>
                 </div>
-                <h4>Total Items: {data.length}</h4>
               </div>
               <div className="filter-container">
                 <div className="switches-group">
